@@ -13,7 +13,9 @@
       //@return map.get(map.get(map.get($colorTypes, $type), $level), 'color');
       @each $key, $value in map.get(map.get($colorTypes, $type), $level) {
         //@debug #{$value};
-        @return #{$value};
+        @if ($key == 'color') {
+          @return #{$value};
+        }
       }
     } @else {
       @warn 'Invalid level specified';
