@@ -2,3 +2,11 @@ $white: #fff;
 $black: #000;
 
 // add the $colors map here (2 dimensional map)
+// prettier-ignore
+$colorTypes: (
+  'gray': ('25':(color:'#FCFCFD'),'50':(color:'#F9FAFB'),'100':(color:'#F2F4F7'),'200':(color:'#E4E7EC'),'300':(color:'#D0D5DD'),'400':(color:'#98A2B3'),'500':(color:'#667085'),'600':(color:'#475467')),
+  'brand': ('25':(color:'#FCFAFF'),'50':(color:'#F9F5FF'),'100':(color:'#F4EBFF'),'200':(color:'#E9D7FE'),'300':(color:'#D6BBFB'),'400':(color:'#B692F6'),'500':(color:'#9E77ED'),'600':(color:'#7F56D9')),
+  'error': ('25':(color:'#FFFBFA'),'50':(color:'#FEF3F2'),'100':(color:'#FEE4E2'),'200':(color:'#FECDCA'),'300':(color:'#FDA29B'),'400':(color:'#F97066'),'500':(color:'#F04438'),'600':(color:'#D92D20')),
+  'warning': ('25':(color:'#FFFCF5'),'50':(color:'#FFFAEB'),'100':(color:'#FEF0C7'),'200':(color:'#FEDF89'),'300':(color:'#FEC84B'),'400':(color:'#FDB022'),'500':(color:'#F79009'),'600':(color:'#DC6803')),
+  'success': ('25':(color:'#F6FEF9'),'50':(color:'#ECFDF3'),'100':(color:'#DCFAE6'),'200':(color:'#ABEFC6'),'300':(color:'#75E0A7'),'400':(color:'#47CD89'),'500':(color:'#17B26A'),'600':(color:'#079455')),
+);
