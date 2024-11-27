@@ -11,12 +11,17 @@
   @if map.has-key($colorTypes, $type) {
     @if map.has-key(map.get($colorTypes, $type), $level) {
       //@return map.get(map.get(map.get($colorTypes, $type), $level), 'color');
+
+      //@debug map.get(map.get($colorTypes, $type), $level);
+      @return #{map.get(map.get($colorTypes, $type), $level)};
+      /*
+      //as backup only
       @each $key, $value in map.get(map.get($colorTypes, $type), $level) {
         //@debug #{$value};
         @if ($key == 'color') {
           @return #{$value};
         }
-      }
+      }*/
     } @else {
       @warn 'Invalid level specified';
     }
