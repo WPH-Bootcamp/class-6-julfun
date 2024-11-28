@@ -13,7 +13,7 @@
       //@return map.get(map.get(map.get($colorTypes, $type), $level), 'color');
 
       //@debug map.get(map.get($colorTypes, $type), $level);
-      @return #{map.get(map.get($colorTypes, $type), $level)};
+      @return map.get(map.get($colorTypes, $type), $level);
       /*
       //as backup only
       @each $key, $value in map.get(map.get($colorTypes, $type), $level) {
