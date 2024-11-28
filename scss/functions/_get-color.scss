@@ -24,10 +24,10 @@
       }*/
     } @else {
       @warn 'Invalid level specified';
+      @return null;
     }
   } @else {
     @warn 'Invalid type specified';
+    @return null;
   }
-
-  @return null;
 }
